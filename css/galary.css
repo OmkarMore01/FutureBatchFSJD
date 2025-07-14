@@ -14,7 +14,7 @@
     border: 2px solid black;
     width: 20%;
     border-radius: 10px;
-   
+   animation: cardHandeler 5s linear infinite;
 }
 .card-img
 {
@@ -59,4 +59,23 @@
     display: inline;
 }
     
+}
+
+
+@keyframes cardHandeler {
+    0%{ transform: translateX(0px);
+         box-shadow: -10px -5px 20px cyan;
+    }
+     25%{ transform: translateX(10px);
+         box-shadow: -10px -5px 20px cyan;
+    }
+     50%{ transform: translateX(15px);
+         box-shadow: -10px -5px 20px cyan;
+    }
+     75%{ transform: translateX(10px);
+         box-shadow: -10px -5px 20px cyan;
+    }
+    100%{ transform: translateX(0px);
+          box-shadow: -10px -5px 20px cyan;
+    }
 }

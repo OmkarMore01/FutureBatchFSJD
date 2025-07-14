@@ -17,3 +17,30 @@
    justify-content: space-between;
    
 }
+.b1
+{
+   width: 50%;
+   height: 100px;
+   margin-left: 100px;
+   margin-top: 50px;
+   cursor: pointer;
+    background-color: #ffcccc;
+    animation: cardmover 5s infinite;
+}
+.b1:hover
+{
+  
+   border-radius: 15px;
+   text-align: center;
+   padding-top: 20px;
+   font-size: 30px;
+  
+   box-shadow: -50px -10px 50px cyan;
+   transition: 2s;
+}
+@keyframes cardmover
+{
+   0%{ transform: translateX(0px);}
+   50%{ transform: translateX(90px);}
+   100%{ transform: translateX(0px);}
+}
